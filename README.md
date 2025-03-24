@@ -26,9 +26,9 @@ passwd <username>
 su - git
 ```
 
-Step 4: Set Up SSH Authentication
-On Client Machine (Developer Laptop)
-Generate an SSH key (if not already created):
+Step 4: Set Up SSH Authentication   <br>
+On Client Machine (Developer Laptop)  <br>
+Generate an SSH key (if not already created):  <br>
 ```ssh
 ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
 ```
@@ -56,9 +56,9 @@ chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 ```
 
-Step 5: Create a Git Repository
-On Git Server
-Create a new directory for Git repositories:
+Step 5: Create a Git Repository  <br>
+On Git Server  <br>
+Create a new directory for Git repositories:  <br>
 ```ssh
 sudo mkdir -p /home/git/repos
 sudo chown git:git /home/git/repos
@@ -71,9 +71,9 @@ git init --bare myproject.git
 ```
 
 
-Step 6: Clone and Use the Repository
-On Client Machine
-Clone the repository:
+Step 6: Clone and Use the Repository  <br>
+On Client Machine   <br>
+Clone the repository:  <br>
 ```ssh
 git clone ssh://git@your-ec2-public-ip:/home/git/repos/myproject.git
 ```
