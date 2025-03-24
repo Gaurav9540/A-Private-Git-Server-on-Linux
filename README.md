@@ -22,6 +22,11 @@ adduser <username>
 passwd <username>
 ```
 
+add git to wheel group:
+```ssh
+usermod -aG wheel git
+```
+
 ```ssh
 su - git
 ```
