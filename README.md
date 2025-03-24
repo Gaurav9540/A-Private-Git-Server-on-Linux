@@ -78,6 +78,11 @@ git init --bare myproject.git
 
 Step 6: Clone and Use the Repository  <br>
 On Client Machine   <br>
+Install git:  <br>
+```ssh
+yum install git -y
+```
+
 Clone the repository:  <br>
 ```ssh
 git clone ssh://git@your-ec2-public-ip:/home/git/repos/myproject.git
