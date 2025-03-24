@@ -31,6 +31,8 @@ usermod -aG wheel git
 su - git
 ```
 
+-----------------------------------------------------------
+
 Step 4: Set Up SSH Authentication   <br>
 On Client Machine (Developer Laptop)  <br>
 Generate an SSH key (if not already created):  <br>
@@ -42,6 +44,7 @@ Copy the public key:
 ```ssh
 cat ~/.ssh/id_rsa.pub
 ```
+------------------------------------------------------------
 
 On Git Server
 Switch to the git user:
@@ -61,6 +64,7 @@ chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 ```
 
+
 Step 5: Create a Git Repository  <br>
 On Git Server  <br>
 Create a new directory for Git repositories:  <br>
@@ -75,6 +79,7 @@ Initialize a bare repository:
 git init --bare myproject.git
 ```
 
+-----------------------------------------------------
 
 Step 6: Clone and Use the Repository  <br>
 On Client Machine   <br>
@@ -109,9 +114,17 @@ Push to the server:
 git push origin main
 ```
 
-Check logs on server machine
+----------------------------------------------------------------
+
+Check logs on server machine:
+
+go to project dir
 ```ssh
-git log
+cd /myproject.git
+```
+
+```ssh
+git log --graph
 ```
 
 
