@@ -126,12 +126,12 @@ cd /myproject.git
 ```ssh
 git log --graph
 ```
-      OR
+
 to view specific commit
 ```ssh
 git show <commit id>
 ```
-      OR
+
 ```ssh
 git log -<commit number>
 ```
